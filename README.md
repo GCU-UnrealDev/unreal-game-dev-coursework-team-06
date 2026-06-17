@@ -1,7 +1,7 @@
 NPC Features:<br/>
 There are 2 types of NPCs in the game: a Melee and Ranged enemy, children of the Enemy<br/>
 
-An Enemy has 5 States, and the higher one takes priority over the lower ones:<br/>
+An Enemy has 4 States, and the higher one takes priority over the lower ones:<br/>
 1. Dead:<br/>
   o	Upon reaching 0 hit points an enemy is considered dead<br/>
   o	Ragdoll<br/>
@@ -26,7 +26,7 @@ An Enemy has 5 States, and the higher one takes priority over the lower ones:<br
     -	Run EQS to find the perfect point to strafe to<br/>
     -	Move to that point<br/>
     -	Wait with a semi random interval<br/>
-3. Attacking (Ranged):<br/>
+2. Attacking (Ranged):<br/>
   o	If health is below a certain threshold:<br/>
     - Find cover:<br/>
       •	Clear focus<br/>
@@ -50,7 +50,7 @@ An Enemy has 5 States, and the higher one takes priority over the lower ones:<br
     -	Set MS<br/>
     -	Run EQS to find the closest position with a line of site to the player with a set parameters<br/>
     -	Move to the position<br/>
-4. Investigating<br/>
+3. Investigating<br/>
   o	Focus on the target<br/>
   o	(Melee Only) If no weapons equipped, equip them<br/>
   o	Investigate:<br/>
@@ -58,7 +58,7 @@ An Enemy has 5 States, and the higher one takes priority over the lower ones:<br
     -	Move to the place where the sound was made<br/>
     -	Wait<br/>
     -	Go to the passive state if nothing found<br/>
-5. Passive (default state)<br/>
+4. Passive (default state)<br/>
   o	(Melee Only) If weapons equipped, unequip them<br/>
   o	If patrol route set – patrol:<br/>
     -	Clear focus<br/>
